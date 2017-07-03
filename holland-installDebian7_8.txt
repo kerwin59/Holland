@@ -26,8 +26,13 @@ Install packages:
 
 Configure Holland:
 *********************
+Adjust to your expectations <ie. I use the path [backup_directory = /var/lib/mysqlbackup] and set the log file>:
 # vim /etc/holland/holland.conf
+
+Adjust to your expectations <ie. Frequency of backups, retain #, holland credentials are here also>:
 # vim /etc/holland/backupsets/default.conf
+
+Test your config:
 # holland bk --dry-run
 **************************
 
